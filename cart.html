@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="
+    https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <title>Cart Page!</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href='/index.html' class="navbar-brand">
+
+            <span class="font-weight-bold text-danger">E</span>-Shop <i
+                class="fas fa-shopping-cart text-primary"></i></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/orders.html">Orders<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cart.html" tabindex="-1" aria-disabled="true">Cart
+                        <span class="badge badge-pill badge-primary">15</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile.html" tabindex="-1" aria-disabled="true">Profile
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login.html" tabindex="-1" aria-disabled="true">Login
+                        <i class="fas fa-sign-in-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html" tabindex="-1" aria-disabled="true">Logout
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup.html" tabindex="-1" aria-disabled="true">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <p class="simple-heading-1 animate__animated animate__bounceInDown">Your Cart</p>
+        <hr>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Sno.</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="animate__backInLeft animate__animated ">
+                    <td class="sno align-middle">1</td>
+                    <td><img class="image rounded-circle" height="80px" width="80" src="" alt=""></td>
+                    <td class="product align-middle">Laptop</td>
+                    <td class="price align-middle">1520</td>
+                    <td class="quantity align-middle">2</td>
+                    <td class="unittotal align-middle">3040</td>
+                </tr>
+
+                <tr class="animate__backInLeft animate__animated ">
+                    <td class="sno align-middle">1</td>
+                    <td><img class="image rounded-circle" height="80px" width="80" src="" alt=""></td>
+                    <td class="product align-middle">Laptop</td>
+                    <td class="price align-middle">1520</td>
+                    <td class="quantity align-middle">2</td>
+                    <td class="unittotal align-middle">3040</td>
+                </tr>
+
+                <tr class="animate__backInLeft animate__animated ">
+                    <td class="sno align-middle">1</td>
+                    <td><img class="image rounded-circle" height="80px" width="80" src="" alt=""></td>
+                    <td class="product align-middle">Laptop</td>
+                    <td class="price align-middle">1520</td>
+                    <td class="quantity align-middle">2</td>
+                    <td class="unittotal align-middle">3040</td>
+                </tr>
+
+                <tr class="animate__backInLeft animate__animated ">
+                    <td class="sno align-middle">1</td>
+                    <td><img class="image rounded-circle" height="80px" width="80" src="" alt=""></td>
+                    <td class="product align-middle">Laptop</td>
+                    <td class="price align-middle">1520</td>
+                    <td class="quantity align-middle">2</td>
+                    <td class="unittotal align-middle">3040</td>
+                </tr>
+
+                <tr class="animate__backInLeft animate__animated ">
+                    <td class="sno align-middle">1</td>
+                    <td><img class="image rounded-circle" height="80px" width="80" src="" alt=""></td>
+                    <td class="product align-middle">Laptop</td>
+                    <td class="price align-middle">1520</td>
+                    <td class="quantity align-middle">2</td>
+                    <td class="unittotal align-middle">3040</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr class="font-weight-bold">
+                    <td></td>
+                    <td colspan="4" class="text-center">Total </td>
+
+                    <td id='totalValue'>156230</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+
+
+    <script>
+
+        var data = [{
+            "product": "Plate Pie Foil",
+            "price": 682
+        }, {
+            "product": "Tart - Lemon",
+            "price": 149
+        }, {
+            "product": "Flour Dark Rye",
+            "price": 782
+        }, {
+            "product": "Muffin Chocolate Individual Wrap",
+            "price": 1127
+        }, {
+            "product": "Cornflakes",
+            "price": 295
+        }, {
+            "product": "Wine - White, Ej",
+            "price": 504
+        }, {
+            "product": "Wine - White, Gewurtzraminer",
+            "price": 437
+        }, {
+            "product": "Maintenance Removal Charge",
+            "price": 577
+        }, {
+            "product": "Lobster - Tail 6 Oz",
+            "price": 452
+        }, {
+            "product": "Pork - Smoked Kassler",
+            "price": 855
+        }, {
+            "product": "Bread - Raisin Walnut Oval",
+            "price": 1005
+        }, {
+            "product": "Wine - White Cab Sauv.on",
+            "price": 213
+        }, {
+            "product": "Plastic Wrap",
+            "price": 956
+        }, {
+            "product": "Cocoa Powder - Dutched",
+            "price": 972
+        }, {
+            "product": "Flour - Buckwheat, Dark",
+            "price": 654
+        }, {
+            "product": "Parsley - Fresh",
+            "price": 832
+        }, {
+            "product": "Cocoa Powder - Dutched",
+            "price": 968
+        }, {
+            "product": "Flour - Rye",
+            "price": 711
+        }, {
+            "product": "Sauce - Ranch Dressing",
+            "price": 395
+        }, {
+            "product": "Sprite, Diet - 355ml",
+            "price": 855
+        }, {
+            "product": "Wine - Guy Sage Touraine",
+            "price": 367
+        }, {
+            "product": "Truffle Cups - Red",
+            "price": 736
+        }, {
+            "product": "Artichoke - Fresh",
+            "price": 942
+        }, {
+            "product": "Apple - Custard",
+            "price": 1030
+        }, {
+            "product": "Clams - Canned",
+            "price": 680
+        }]
+        $(document).ready(function () {
+
+
+            var images = $('.image')
+            console.log(images.length);
+
+            var products = $('.product')
+            var prices = $('.price')
+            var qts = $('.quantity')
+            var ut = $('.unittotal')
+            var snos = $('.sno')
+            var finalTotal = 0;
+            for (var i = 0; i < images.length; i++) {
+                var price = data[i].price;
+                var q = Math.ceil(Math.random() * 10)
+                var total = price * q
+                finalTotal += total
+                $(images[i]).attr('src', 'https://picsum.photos/id/' + Math.ceil(Math.random() * 100) + '/500/500');
+                $(products[i]).text(data[i].product)
+                $(prices[i]).html("$ " + price);
+                $(qts[i]).text(q);
+                $(ut[i]).text("$ " + total);
+                $(snos[i]).text(i + 1);
+            }
+
+            $('#totalValue').text("$ " + finalTotal);
+        })
+
+
+    </script>
+
+</body>
+
+</html>
